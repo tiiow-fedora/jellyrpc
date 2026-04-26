@@ -1,0 +1,18 @@
+[Unit]
+Description=JellyRPC — Discord Rich Presence (window/idle fallback)
+After=graphical-session.target
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/jellyrpc.py
+Restart=on-failure
+RestartSec=5s
+Environment="PATH=/usr/bin:/usr/local/bin:%h/.local/bin"
+PassEnvironment=DBUS_SESSION_BUS_ADDRESS DISPLAY WAYLAND_DISPLAY XDG_RUNTIME_DIR
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=jellyrpc
+
+[Install]
+WantedBy=default.target

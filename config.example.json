@@ -1,0 +1,5 @@
+{
+  "discord_app_id":   "YOUR_DISCORD_APP_ID",
+  "idle_detection":   true,
+  "window_detection": true
+}
