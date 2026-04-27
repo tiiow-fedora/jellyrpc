@@ -21,7 +21,7 @@ App detection uses `pgrep` in priority order — terminal beats browser, editor 
 ## Install
 
 ```bash
-git clone https://github.com/hlucas/jellyrpc
+git clone https://https://github.com/tiiow-fedora/jellyrpc
 cd jellyrpc
 bash install.sh
 ```
