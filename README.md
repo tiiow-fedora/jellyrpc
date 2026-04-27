@@ -46,6 +46,31 @@ nano ~/.config/jellyrpc/config.json
 2. New Application → name it whatever you want shown in Discord (e.g. "Linux")
 3. Copy the Application ID from the General Information page
 
+### Uploading Rich Presence Art Assets
+
+jellyrpc uses named image keys for each activity. You must upload the icons manually in your browser — this cannot be automated.
+
+The icon files are in the `assets/` folder of this repo.
+
+**Steps:**
+
+1. Go to [discord.com/developers/applications](https://discord.com/developers/applications) and open your application
+2. Click **Rich Presence** → **Art Assets** in the left sidebar
+3. Upload each PNG from `assets/` with the exact key name listed below
+
+| File | Key name (must match exactly) |
+|------|-------------------------------|
+| `firefox.png` | `firefox` |
+| `terminal.png` | `terminal` |
+| `coding.png` | `coding` |
+| `steam.png` | `steam` |
+| `jellyfin.png` | `jellyfin` |
+| `idle.png` | `idle` |
+| `music.png` | `music` |
+| `watching.png` | `watching` |
+
+The key names must match exactly — they map directly to the `large_image` values in `APP_MAP`.
+
 ### Dependencies
 
 | Package | Purpose | Fedora |
