@@ -45,8 +45,7 @@ nano ~/.config/jellyrpc/config.json
 1. Go to [discord.com/developers/applications](https://discord.com/developers/applications)
 2. New Application → name it whatever you want shown in Discord (e.g. "Linux")
 3. Copy the Application ID from the General Information page
-4. restart with systemctl --user restart jellyrpc
-
+   
 ### Uploading Rich Presence Art Assets
 
 jellyrpc uses named image keys for each activity. You must upload the icons manually in your browser — this cannot be automated.
