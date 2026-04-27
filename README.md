@@ -31,7 +31,7 @@ Then fill in your config:
 ```bash
 nano ~/.config/jellyrpc/config.json
 ```
-
+(dont forget to restart it with systemctl --user restart jellyrpc)
 ```json
 {
   "discord_app_id":   "YOUR_DISCORD_APP_ID",
@@ -45,6 +45,7 @@ nano ~/.config/jellyrpc/config.json
 1. Go to [discord.com/developers/applications](https://discord.com/developers/applications)
 2. New Application → name it whatever you want shown in Discord (e.g. "Linux")
 3. Copy the Application ID from the General Information page
+4. restart with systemctl --user restart jellyrpc
 
 ### Uploading Rich Presence Art Assets
 
